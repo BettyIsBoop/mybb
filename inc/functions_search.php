@@ -290,15 +290,15 @@ function clean_keywords($keywords)
 
 	// Search for "and" or "or" and remove if it's at the beginning
 	$keywords = trim($keywords);
-	if(my_strpos($keywords, "or") === 0)
+	if(my_strpos($keywords, "or ") === 0)
 	{
-		$keywords = substr_replace($keywords, "", 0, 2);
+		$keywords = substr_replace($keywords, "", 0, 3);
 		$keywords = " ".$keywords;
 	}
 
-	if(my_strpos($keywords, "and") === 0)
+	if(my_strpos($keywords, "and ") === 0)
 	{
-		$keywords = substr_replace($keywords, "", 0, 3);
+		$keywords = substr_replace($keywords, "", 0, 4);
 		$keywords = " ".$keywords;
 	}
 
@@ -325,7 +325,7 @@ function clean_keywords_ft($keywords)
 	$keywords = my_strtolower($keywords);
 	$keywords = str_replace("%", "\\%", $keywords);
 	$keywords = preg_replace("#\*{2,}#s", "*", $keywords);
-	$keywords = preg_replace("#([\[\]\|\.\,:])#s", " ", $keywords);
+	//~ $keywords = preg_replace("#([\[\]\|\.\,:])#s", " ", $keywords);
 	// Separate braces for further processing
 	$keywords = preg_replace("#((\+|-|<|>|~)?\(|\))#s", " $1 ", $keywords);
 	$keywords = preg_replace("#\s+#s", " ", $keywords);
