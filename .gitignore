@@ -47,3 +47,38 @@ Thumbs.db
 
 # Generic git files
 *.orig
+
+#Plugins and other
+images
+inc/plugins
+inc/languages/french
+inc/languages/french.php
+inc/languages/english/admhijack.lang.php
+inc/languages/english/amnesia.lang.php
+inc/languages/english/announcements.lang.php
+inc/languages/english/MaintenanceMode_plugin.lang.php
+inc/languages/english/myalerts.lang.php
+inc/languages/english/my_spoiler.lang.php
+inc/languages/english/thankyoulike.lang.php
+inc/languages/english/unreadPosts.lang.php
+inc/languages/english/description.lang.php
+inc/languages/english/linkanonymizer.lang.php
+inc/languages/english/mention.lang.php
+inc/languages/english/admin/admhijack.lang.php
+inc/languages/english/admin/amnesia.lang.php
+inc/languages/english/admin/bam.lang.php
+inc/languages/english/admin/config_myinsertbuttons.lang.php
+inc/languages/english/admin/config_thankyoulike.lang.php
+inc/languages/english/admin/MaintenanceMode_plugin_admin.lang.php
+inc/languages/english/admin/mention.lang.php
+inc/languages/english/admin/myalerts.lang.php
+inc/languages/english/admin/unreadPosts.lang.php
+jscripts/MentionMe/*
+jscripts/sceditor/myinsertbuttons/*
+jscripts/myalerts.js
+jscripts/spoiler.js
+jscripts/spoiler_action.js
+jscripts/thankyoulike.js
+jscripts/thankyoulike.min.js
+jscripts/tipsy.js
+jscripts/unreadPosts.js
