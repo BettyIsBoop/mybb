@@ -21,6 +21,7 @@ function build_postbit($post, $post_type=0)
 	global $titlescache, $page, $templates, $forumpermissions, $attachcache;
 	global $lang, $ismod, $inlinecookie, $inlinecount, $groupscache, $fid;
 	global $plugins, $parser, $cache, $ignored_users, $hascustomtitle;
+	global $post;
 
 	$hascustomtitle = 0;
 
