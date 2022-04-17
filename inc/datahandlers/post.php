@@ -223,7 +223,7 @@ class PostDataHandler extends DataHandler
 			}
 		}
 
-		if($subject_length > 85)
+		if($subject_length > 385)
 		{
 			// Subject is too long
 			$this->set_error('subject_too_long', my_strlen($subject));
